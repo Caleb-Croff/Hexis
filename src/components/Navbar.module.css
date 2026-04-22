@@ -1,0 +1,101 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  height: 56px;
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.5px;
+  margin-right: auto;
+}
+
+.links {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.link {
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.link:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+.active {
+  background: var(--accent-bg);
+  color: var(--accent-text);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.displayName {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.themeBtn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: background 0.15s, color 0.15s;
+}
+
+.themeBtn:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+.logoutBtn {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.logoutBtn:hover {
+  background: var(--bg-hover);
+  color: var(--text);
+}
+
+@media (max-width: 480px) {
+  .displayName {
+    display: none;
+  }
+}
