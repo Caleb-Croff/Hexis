@@ -1,0 +1,34 @@
+.page {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #f9fafb;
+}
+
+.code {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #e5e7eb;
+  letter-spacing: -4px;
+  line-height: 1;
+}
+
+.message {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.link {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #6366f1;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
