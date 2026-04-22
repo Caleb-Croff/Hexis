@@ -1,0 +1,150 @@
+.page {
+  min-height: 100svh;
+}
+
+.main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.muted {
+  font-size: 0.875rem;
+  color: var(--text-subtle);
+}
+
+.tableWrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--bg-subtle);
+  border-bottom: 1px solid var(--border);
+}
+
+.row:hover {
+  background: var(--bg-hover);
+}
+
+.editRow {
+  background: var(--accent-bg);
+}
+
+.td {
+  padding: 0.875rem 1rem;
+  font-size: 0.9375rem;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+
+.row:last-child .td,
+.editRow:last-child .td {
+  border-bottom: none;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editBtn,
+.deleteBtn,
+.saveBtn,
+.cancelBtn {
+  padding: 0.3125rem 0.625rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.15s;
+}
+
+.editBtn {
+  background: var(--accent-bg);
+  color: var(--accent-text);
+  border-color: var(--accent-bg);
+}
+
+.editBtn:hover {
+  opacity: 0.8;
+}
+
+.deleteBtn {
+  background: transparent;
+  color: var(--danger-text);
+  border-color: var(--danger-border);
+}
+
+.deleteBtn:hover:not(:disabled) {
+  background: var(--danger-bg);
+}
+
+.deleteBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.saveBtn {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.saveBtn:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.saveBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cancelBtn {
+  background: transparent;
+  color: var(--text-muted);
+  border-color: var(--border);
+}
+
+.cancelBtn:hover {
+  background: var(--bg-hover);
+}
+
+.editInput {
+  padding: 0.375rem 0.5rem;
+  border: 1px solid var(--border-input);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: var(--text);
+  background: var(--bg-input);
+  outline: none;
+  width: 100%;
+}
+
+.editInput:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-ring);
+}
